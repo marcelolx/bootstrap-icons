@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gemspec
 
-gem "bootstrap-icons", "0.0.1"
+gem "bootstrap-icons"
 gem "rails"
 
 group :development, :test do
