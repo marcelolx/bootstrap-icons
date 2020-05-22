@@ -1,3 +1,0 @@
-#!/usr/bin/env ruby
-system "bundle exec solargraph bundle"
-system "bundle exec solargraph scan"

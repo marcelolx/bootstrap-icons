@@ -1,0 +1,15 @@
+{
+  "version": "0.0.1",
+  "scripts": {
+    "build": "script/build.js --input node_modules/bootstrap-icons/icons/**/*.svg --output bootstrap-icons-gem/lib/build/data.json"
+  },
+  "devDependencies": {
+    "bootstrap-icons": "^1.0.0-alpha4",
+    "fs-extra": "^7.0.1",
+    "globby": "^11.0.0",
+    "cheerio": "^1.0.0-rc.3",
+    "trim-newlines": "^3.0.0",
+    "yargs": "^15.1.0",
+    "lodash.keyby": "^4.6.0"
+  }
+}

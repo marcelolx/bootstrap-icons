@@ -10,5 +10,5 @@
       "useBundler": true
     }
   },
-  "solargraph.useBundler": true
+  "git.ignoreLimitWarning": true
 }

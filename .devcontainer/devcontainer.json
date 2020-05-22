@@ -9,7 +9,6 @@
   "extensions": [
     "rebornix.ruby",
     "eamodio.gitlens",
-    "castwide.solargraph",
     "kaiwood.endwise",
     "editorconfig.editorconfig",
     "elliotlarson.ruby-around-the-block"
