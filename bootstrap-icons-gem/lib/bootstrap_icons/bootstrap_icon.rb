@@ -69,6 +69,8 @@ module BootstrapIcons
         size[:height] = @options[:height].nil? ? calculate_height(@options[:width]) : @options[:height]
       end
 
+      size[:width] = size[:width].to_s + "em"
+      size[:height] = size[:height].to_s + "em"
       size
     end
 

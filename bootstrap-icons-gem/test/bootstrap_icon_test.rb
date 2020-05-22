@@ -51,38 +51,38 @@ describe BootstrapIcons::BootstrapIcon do
   describe "size" do
     it "always has width and height" do
       icon = bootstrap_icon("x")
-      assert_includes icon.to_svg, "height=\"1\""
-      assert_includes icon.to_svg, "width=\"1\""
+      assert_includes icon.to_svg, "height=\"1em\""
+      assert_includes icon.to_svg, "width=\"1em\""
     end
 
     it "converts number string height to integer" do
       icon = bootstrap_icon("x", height: "60")
-      assert_includes icon.to_svg, "height=\"60\""
-      assert_includes icon.to_svg, "width=\"60\""
+      assert_includes icon.to_svg, "height=\"60em\""
+      assert_includes icon.to_svg, "width=\"60em\""
     end
 
     it "converts number height to integer" do
       icon = bootstrap_icon("x", height: 60)
-      assert_includes icon.to_svg, "height=\"60\""
-      assert_includes icon.to_svg, "width=\"60\""
+      assert_includes icon.to_svg, "height=\"60em\""
+      assert_includes icon.to_svg, "width=\"60em\""
     end
 
     it "converts number string width to integer" do
       icon = bootstrap_icon("x", width: "45")
-      assert_includes icon.to_svg, "height=\"45\""
-      assert_includes icon.to_svg, "width=\"45\""
+      assert_includes icon.to_svg, "height=\"45em\""
+      assert_includes icon.to_svg, "width=\"45em\""
     end
 
     it "converts number width to integer" do
       icon = bootstrap_icon("x", width: 45)
-      assert_includes icon.to_svg, "height=\"45\""
-      assert_includes icon.to_svg, "width=\"45\""
+      assert_includes icon.to_svg, "height=\"45em\""
+      assert_includes icon.to_svg, "width=\"45em\""
     end
 
     it "with height and width passed in" do
       icon = bootstrap_icon("x", width: 60, height: 60)
-      assert_includes icon.to_svg, "width=\"60\""
-      assert_includes icon.to_svg, "height=\"60\""
+      assert_includes icon.to_svg, "width=\"60em\""
+      assert_includes icon.to_svg, "height=\"60em\""
     end
   end
 

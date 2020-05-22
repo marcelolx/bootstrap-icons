@@ -1,7 +1,7 @@
 {
   "version": "0.0.1",
   "scripts": {
-    "build": "script/build.js --input node_modules/bootstrap-icons/icons/**/*.svg --output bootstrap-icons-gem/lib/build/data.json"
+    "build": "./script/build.js --input node_modules/bootstrap-icons/icons/**/*.svg --output lib/build/data.json"
   },
   "devDependencies": {
     "bootstrap-icons": "^1.0.0-alpha4",

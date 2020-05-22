@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.description = "A package that distributes Bootstrap Icons in a gem"
   s.authors     = ["Marcelo Lauxen"]
   s.email       = ["marcelolauxen16@gmail.com"]
-  s.files       = Dir["{lib}/**/*"] + ["LICENSE", "README.md"]
+  s.files       = Dir["{lib}/**/*"] + ["LICENSE", "README.md", "CHANGELOG.md"]
   s.homepage    = "https://github.com/marcelolx/bootstrap-icons"
   s.license     = "MIT"
   s.add_dependency "nokogiri", "~> 1.6"
