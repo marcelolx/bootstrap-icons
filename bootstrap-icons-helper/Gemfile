@@ -2,6 +2,9 @@ source "https://rubygems.org"
 
 gemspec
 
+gem "bootstrap-icons", "0.0.1"
+gem "rails"
+
 group :development, :test do
   gem "minitest"
   gem "rake"

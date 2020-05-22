@@ -1,0 +1,16 @@
+{
+  "name": "bootstrap-icons-helper",
+  "dockerComposeFile": [
+    "../docker-compose.yml",
+    "docker-compose.extend.yml"
+  ],
+  "service": "bootstrap-icons-helper",
+  "workspaceFolder": "/app/",
+  "extensions": [
+    "rebornix.ruby",
+    "eamodio.gitlens",
+    "kaiwood.endwise",
+    "editorconfig.editorconfig",
+    "elliotlarson.ruby-around-the-block"
+  ]
+}

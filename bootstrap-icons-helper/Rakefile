@@ -1,0 +1,33 @@
+require "rake/testtask"
+require "rubocop/rake_task"
+require "bundler/gem_tasks"
+
+RuboCop::RakeTask.new(:lint) do |t|
+  t.options = ["--display-cop-names"]
+end
+
+task :version, [:v] do |t, args|
+  out = "module BootstrapIconsHelper\n"\
+    "  VERSION = \"#{args[:v]}\".freeze\n"\
+    "end"
+  
+  File.open(File.expand_path("../lib/bootstrap-icons-helper/version.rb", __FILE__), "w") do |file|
+    file.puts out
+  end
+
+  ["bootstrap-icons-helper.gemspec", "Gemfile"].each do |filename|
+    gs = File.read(File.expand_path("../#{filename}", __FILE__))
+    File.open(File.expand_path("../#{filename}", __FILE__), "w") do |file|
+      file.puts gs.gsub(/"bootstrap-icons", "[^"]+"/, "\"bootstrap-icons\", \"#{args[:v]}\"")
+    end
+  end
+end
+
+Rake::TestTask.new do |t|
+  t.libs = ["lib", "test"]
+  t.test_files = FileList["test/*_test.rb"]
+  t.warning = false
+end
+
+desc "Run tests"
+task default: :test

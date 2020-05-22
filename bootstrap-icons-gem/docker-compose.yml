@@ -10,15 +10,12 @@ services:
     image: bootstrap-icons
     volumes:
       - .:/app/
-      - gem_vendor:/app/bootstrap-icons-gem/vendor
-      - helper_vendor:/app/bootstrap-icons-helper/vendor
+      - vendor:/app/vendor
     ports:
       - "3001:3000"
     container_name: bootstrap-icons
     command: /bin/sh -c "while sleep 1000; do :; done"
 
 volumes:
-  gem_vendor:
-    driver: local
-  helper_vendor:
+  vendor:
     driver: local

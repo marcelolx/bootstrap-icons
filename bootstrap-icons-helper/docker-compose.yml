@@ -1,0 +1,21 @@
+version: "3.4"
+
+services:
+  bootstrap-icons-helper:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    restart: on-failure
+    image: bootstrap-icons-helper
+    volumes:
+      - .:/app/
+      - vendor:/app/vendor
+    ports:
+      - "3003:3000"
+    container_name: bootstrap-icons-helper
+    command: /bin/sh -c "while sleep 1000; do :; done"
+
+volumes:
+  vendor:
+    driver: local

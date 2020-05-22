@@ -1,0 +1,14 @@
+{
+  "ruby.intellisense": false,
+  "ruby.useBundler": true,
+  "ruby.useLanguageServer": false,
+  "ruby.lint": {
+    "rubocop": {
+      "useBundler": true
+    },
+    "reek": {
+      "useBundler": true
+    }
+  },
+  "git.ignoreLimitWarning": true
+}
