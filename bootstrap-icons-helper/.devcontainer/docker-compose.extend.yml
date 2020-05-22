@@ -1,5 +1,0 @@
-version: '3.4'
-
-services:
-  bootstrap-icons-helper:
-    command: /bin/sh -c "while sleep 1000; do :; done"

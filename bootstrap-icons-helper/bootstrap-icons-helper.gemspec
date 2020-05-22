@@ -3,7 +3,7 @@ require File.expand_path("../lib/bootstrap-icons-helper/version", __FILE__)
 Gem::Specification.new do |s|
   s.name        = "bootstrap-icons-helper"
   s.version     = BootstrapIconsHelper::VERSION
-  s.summary     = "Bootstrap I rails helper"
+  s.summary     = "Bootstrap Icons rails helper"
   s.description = "A rails helper that makes including svg Bootstrap Icons simple."
   s.authors     = ["Marcelo Lauxen"]
   s.email       = ["marcelolauxen16@gmail.com"]
