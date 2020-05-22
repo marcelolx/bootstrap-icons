@@ -33,6 +33,20 @@ describe BootstrapIcons::BootstrapIcon do
     end
   end
 
+  describe "fill" do
+    it "always have a fill" do
+      icon = bootstrap_icon("x")
+      assert_includes icon.to_svg, "fill=\"currentColor\""
+    end
+
+    describe "when custom fill provided" do
+      it "fills the icon with the provided color" do
+        icon = bootstrap_icon("x", fill: "blue")
+        assert_includes icon.to_svg, "fill=\"blue\""
+      end
+    end
+  end
+
   describe "html_attributes" do
     it "includes other html attributes" do
       icon = bootstrap_icon("x", foo: "bar", disabled: "true")

@@ -42,12 +42,14 @@ const icons = filePaths.map(filepath => {
   const width = parseInt(svgElement.attr('width'))
   const height = parseInt(svgElement.attr('height'))
   const viewBox = svgElement.attr('viewBox')
+  const fill = svgElement.attr('fill')
   const innerHtml = trimNewlines(svgElement.html()).trim()
   return {
     name,
     width,
     height,
     viewBox,
+    fill,
     path: innerHtml
   }
 })

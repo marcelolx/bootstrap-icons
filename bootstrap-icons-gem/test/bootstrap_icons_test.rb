@@ -7,5 +7,7 @@ describe BootstrapIcons do
     assert x_icon["path"]
     assert x_icon["height"]
     assert x_icon["width"]
+    assert x_icon["fill"]
+    assert x_icon["viewBox"]
   end
 end

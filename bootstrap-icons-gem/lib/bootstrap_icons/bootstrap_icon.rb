@@ -9,11 +9,13 @@ module BootstrapIcons
         @path = bootstrap_icon["path"]
         @width = bootstrap_icon["width"].to_i
         @height = bootstrap_icon["height"].to_i
+        @fill = bootstrap_icon["fill"]
         
         @options = options
         @options.merge!({
           class: classes,
           viewBox: bootstrap_icon["viewBox"],
+          fill: fill_with,
           version: "1.1"
         })
         @options.merge!(size)
@@ -54,6 +56,11 @@ module BootstrapIcons
     # prepare the bootstrap_icon class
     def classes
       "bi bi-#{@symbol} #{@options[:class]} ".strip
+    end
+
+    def fill_with
+      fill_option = @options[:fill]
+      fill_option.nil? ? @fill : fill_option
     end
 
     # determine the height and width of the bootstrap_icon based on :size option
