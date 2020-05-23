@@ -1,6 +1,6 @@
 # bootstrap-icons
 
-This project is based on [OctIcons](https://github.com/primer/octicons) packages.
+This project is based on [Octicons](https://github.com/primer/octicons) packages.
 
 ## Using bootstrap svg icons in Rails
 
