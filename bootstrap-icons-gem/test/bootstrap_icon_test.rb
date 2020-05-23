@@ -24,6 +24,8 @@ describe BootstrapIcons::BootstrapIcon do
     assert_equal "x", icon.symbol
     assert_equal 1, icon.width
     assert_equal 1, icon.height
+    assert_equal "currentColor", icon.fill
+    assert_equal "0 0 16 16", icon.viewBox
   end
 
   describe "viewBox" do

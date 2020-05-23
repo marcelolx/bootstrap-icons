@@ -9,3 +9,8 @@
 ## 0.0.3
 
 - Add support to fill icon.
+
+## 0.0.4
+
+- Expose fill and viewBox.
+- Internal refactorings.
