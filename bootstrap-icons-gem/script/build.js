@@ -39,8 +39,8 @@ const icons = filePaths.map(filepath => {
   const name = path.parse(filepath).name
   const svg = fs.readFileSync(path.resolve(filepath), 'utf8')
   const svgElement = cheerio.load(svg)('svg')
-  const width = parseInt(svgElement.attr('width'))
-  const height = parseInt(svgElement.attr('height'))
+  const width = svgElement.attr('width')
+  const height = svgElement.attr('height')
   const viewBox = svgElement.attr('viewBox')
   const fill = svgElement.attr('fill')
   const innerHtml = trimNewlines(svgElement.html()).trim()

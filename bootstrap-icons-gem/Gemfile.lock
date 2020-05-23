@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bootstrap-icons (0.0.3)
+    bootstrap-icons (1.0.0)
       nokogiri (~> 1.6)
 
 GEM

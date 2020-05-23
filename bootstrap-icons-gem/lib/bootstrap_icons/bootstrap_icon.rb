@@ -7,8 +7,8 @@ module BootstrapIcons
       @options = options
       @bootstrap_icon = find_bootstrap_icon        
       @path = bootstrap_icon["path"]
-      @width = bootstrap_icon["width"].to_i
-      @height = bootstrap_icon["height"].to_i
+      @width = bootstrap_icon["width"]
+      @height = bootstrap_icon["height"]
       @fill = bootstrap_icon["fill"]
       @viewBox = bootstrap_icon["viewBox"]
       
@@ -77,32 +77,23 @@ module BootstrapIcons
 
     # determine the height and width of the bootstrap_icon based on :size option
     def size
-      size = {
-        width:  width,
+      return default_icon_size unless custom_size_provided?
+
+      {
+        width:  options.has_key?(:width) ? options[:width] : options[:height],
+        height: options.has_key?(:height) ? options[:height] : options[:width]
+      }
+    end
+
+    def default_icon_size
+      {
+        width: width,
         height: height
       }
-
-      # Specific size
-      if custom_size_option_provided?
-        size[:width]  = options.has_key?(:width) ? options[:width] : calculate_width(options[:height])
-        size[:height] = options.has_key?(:height) ? options[:height] : calculate_height(options[:width])
-      end
-
-      size[:width] = size[:width].to_s + "em"
-      size[:height] = size[:height].to_s + "em"
-      size
     end
 
-    def custom_size_option_provided?
+    def custom_size_provided?
       options.has_key?(:width) || options.has_key?(:height)
-    end
-
-    def calculate_width(custom_height)
-      (custom_height.to_i * width) / height
-    end
-
-    def calculate_height(custom_width)
-      (custom_width.to_i * height) / width
     end
   end
 end
