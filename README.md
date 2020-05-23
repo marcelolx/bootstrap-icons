@@ -1,10 +1,18 @@
 # bootstrap-icons
 
-Work in progress
+This project is based on [OctIcons](https://github.com/primer/octicons) packages.
 
+## Using bootstrap svg icons in Rails
 
-# Rails
+1. Add this to your `Gemfile`
+   
+        $ gem 'bootstrap-icons-helper'
 
-To use Bootstrap Icons in rails, add `bootstrap-icons-helper` to your Gemfile, and in your view call `bootstrap_icon(icon_name)`.
+2. Use this tag in your erbs
 
-More options will be documented.
+        $ <%= bootstrap_icon "check", width: 5, height: 5, fill: "blue" %>
+
+## Docs
+
+ - [bootstrap-icons-gem](/bootstrap-icons-gem)
+ - [bootstrap-icons-helper](/bootstrap-icons-helper)
