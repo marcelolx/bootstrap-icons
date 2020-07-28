@@ -1,5 +1,7 @@
 # bootstrap-icons
 
+Bootstrap Icons: [v1.0.0-alpha5](https://github.com/twbs/icons/releases/tag/v1.0.0-alpha5)
+
 This project is based on [Octicons](https://github.com/primer/octicons) packages.
 
 ## Using bootstrap svg icons in Rails
