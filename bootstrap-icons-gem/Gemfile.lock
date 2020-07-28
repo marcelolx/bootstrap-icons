@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bootstrap-icons (1.0.0)
+    bootstrap-icons (1.0.1)
       nokogiri (~> 1.6)
 
 GEM
@@ -10,7 +10,7 @@ GEM
     ast (2.4.0)
     mini_portile2 (2.4.0)
     minitest (5.14.1)
-    nokogiri (1.10.9)
+    nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
     parallel (1.19.1)
     parser (2.7.1.2)
