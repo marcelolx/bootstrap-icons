@@ -23,3 +23,7 @@
 ## 1.0.1
 
 - Update bootstrap icons to `v1.0.0-alpha5`.
+
+## 1.0.2
+
+- Update bootstrap icons to `v1.0.0`.
