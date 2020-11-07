@@ -1,6 +1,6 @@
 # bootstrap-icons
 
-Bootstrap Icons: [v1.0.0](https://github.com/twbs/icons/releases/tag/v1.0.0)
+Bootstrap Icons: [v1.1.0](https://github.com/twbs/icons/releases/tag/v1.1.0)
 
 This project was inspired on [Octicons](https://github.com/primer/octicons) packages.
 

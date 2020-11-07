@@ -7,7 +7,7 @@ describe BootstrapIconsHelper do
     end
 
     it "renders the svg" do
-      assert_match /<svg.*bi-x.*>.*\n.*<\/svg>/, bootstrap_icon("x")
+      assert_match /<svg.*bi-x.*>.*<\/svg>/, bootstrap_icon("x")
     end
 
     it "has a path" do
