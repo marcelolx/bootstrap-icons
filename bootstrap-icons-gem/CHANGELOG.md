@@ -31,3 +31,7 @@
 ## 1.0.4
 
 - Update bootstrap icons to `v1.1.0`.
+
+## 1.0.5
+
+- Update bootstrap icons to `v1.2.2`.

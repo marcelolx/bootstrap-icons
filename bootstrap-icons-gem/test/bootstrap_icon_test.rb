@@ -22,8 +22,8 @@ describe BootstrapIcons::BootstrapIcon do
     assert icon.path
     assert icon.options
     assert_equal "x", icon.symbol
-    assert_equal "1em", icon.width
-    assert_equal "1em", icon.height
+    assert_equal "16", icon.width
+    assert_equal "16", icon.height
     assert_equal "currentColor", icon.fill
     assert_equal "0 0 16 16", icon.viewBox
   end
@@ -67,8 +67,8 @@ describe BootstrapIcons::BootstrapIcon do
   describe "size" do
     it "always has width and height" do
       icon = bootstrap_icon("x")
-      assert_includes icon.to_svg, "height=\"1em\""
-      assert_includes icon.to_svg, "width=\"1em\""
+      assert_includes icon.to_svg, "height=\"16\""
+      assert_includes icon.to_svg, "width=\"16\""
     end
 
     it "converts number string height to integer" do
