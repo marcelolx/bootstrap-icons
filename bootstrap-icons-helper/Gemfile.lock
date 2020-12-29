@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bootstrap-icons-helper (1.0.4)
+    bootstrap-icons-helper (1.0.5)
       bootstrap-icons (~> 1.0)
       rails (~> 6.0)
 
@@ -64,7 +64,7 @@ GEM
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2, >= 2.2.2)
     ast (2.4.1)
-    bootstrap-icons (1.0.4)
+    bootstrap-icons (1.0.5)
       nokogiri (~> 1.6)
     builder (3.2.4)
     concurrent-ruby (1.1.7)
