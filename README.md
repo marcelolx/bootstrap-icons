@@ -1,6 +1,6 @@
 # bootstrap-icons
 
-Bootstrap Icons: [v1.2.2](https://github.com/twbs/icons/releases/tag/v1.2.2)
+Bootstrap Icons: [v1.3.0](https://github.com/twbs/icons/releases/tag/v1.3.0)
 
 Consider using icon fonts instead of this gem https://blog.getbootstrap.com/2020/12/11/bootstrap-icons-1-2-0/.
 
