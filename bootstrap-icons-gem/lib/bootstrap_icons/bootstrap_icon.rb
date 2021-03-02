@@ -11,7 +11,7 @@ module BootstrapIcons
       @height = bootstrap_icon["height"]
       @fill = bootstrap_icon["fill"]
       @viewBox = bootstrap_icon["viewBox"]
-      
+
       prepare_icon_options
     end
 
