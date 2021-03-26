@@ -2,8 +2,8 @@ PATH
   remote: .
   specs:
     bootstrap-icons-helper (1.0.8)
-      bootstrap-icons (~> 1.0)
-      rails (~> 6.0)
+      bootstrap-icons (>= 1.0)
+      rails (>= 6.0)
 
 GEM
   remote: https://rubygems.org/
