@@ -11,5 +11,5 @@ Gem::Specification.new do |s|
   s.files       = Dir["{lib}/**/*"] + ["LICENSE", "README.md", "CHANGELOG.md"]
   s.homepage    = "https://github.com/marcelolx/bootstrap-icons"
   s.license     = "MIT"
-  s.add_dependency "nokogiri", "~> 1.6"
+  s.add_dependency "nokogiri", "~> 1"
 end
