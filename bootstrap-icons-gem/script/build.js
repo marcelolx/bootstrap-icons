@@ -5,7 +5,7 @@
   const path = require('path')
   const { globbySync } = await import('globby')
   const cheerio = require('cheerio')
-  const trimNewlines = require('trim-newlines')
+  const { trimNewlines } = await import('trim-newlines')
   const yargs = require('yargs')
   const keyBy = require('lodash.keyby')
 
