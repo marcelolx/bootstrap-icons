@@ -14,5 +14,5 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency "bootstrap-icons", "~> 1"
-  s.add_dependency "rails", ">= 6"
+  s.add_dependency "rails", ">= 7.0"
 end

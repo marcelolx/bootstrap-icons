@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    bootstrap-icons-helper (2.0.1)
+    bootstrap-icons-helper (2.0.2)
       bootstrap-icons (~> 1)
-      rails (>= 6)
+      rails (>= 7.0)
 
 GEM
   remote: https://rubygems.org/
@@ -74,7 +74,7 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
     ast (2.4.2)
-    bootstrap-icons (1.0.13)
+    bootstrap-icons (1.0.14)
       nokogiri (~> 1)
     builder (3.2.4)
     concurrent-ruby (1.1.10)
@@ -97,7 +97,7 @@ GEM
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.1)
+    mini_portile2 (2.8.5)
     minitest (5.17.0)
     net-imap (0.3.4)
       date
@@ -109,13 +109,13 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.8)
-    nokogiri (1.14.3)
-      mini_portile2 (~> 2.8.0)
+    nokogiri (1.15.5)
+      mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     parallel (1.22.1)
     parser (3.2.0.0)
       ast (~> 2.4.1)
-    racc (1.6.2)
+    racc (1.7.3)
     rack (2.2.6.4)
     rack-test (2.0.2)
       rack (>= 1.3)
