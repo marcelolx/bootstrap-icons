@@ -4,7 +4,7 @@
     "build": "./script/build.js --input node_modules/bootstrap-icons/icons/**/*.svg --output lib/build/data.json"
   },
   "devDependencies": {
-    "bootstrap-icons": "^1.10.3",
+    "bootstrap-icons": "^1.11.1",
     "cheerio": "^1.0.0-rc.10",
     "fs-extra": "^7.0.1",
     "globby": "^11.0.0",
