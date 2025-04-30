@@ -4,10 +4,10 @@
     "build": "./script/build.js --input node_modules/bootstrap-icons/icons/**/*.svg --output lib/build/data.json"
   },
   "devDependencies": {
-    "bootstrap-icons": "^1.11.1",
-    "cheerio": "^1.0.0-rc.12",
-    "fs-extra": "^11.1.1",
-    "globby": "^14.0.0",
+    "bootstrap-icons": "^1.11.3",
+    "cheerio": "^1.0.0",
+    "fs-extra": "^11.3.0",
+    "globby": "^14.1.0",
     "lodash.keyby": "^4.6.0",
     "trim-newlines": "^5.0.0",
     "yargs": "^17.7.2"
