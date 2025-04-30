@@ -1,3 +1,3 @@
 module BootstrapIconsHelper
-  VERSION = "2.0.2".freeze
+  VERSION = "2.0.3".freeze
 end
